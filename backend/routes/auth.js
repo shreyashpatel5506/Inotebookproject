@@ -10,7 +10,7 @@ const JWT_SECRET = process.env.JWT_SECRET || "helloitisbackend";
 
 // Route 1: Create a User (POST: /api/auth/createUser)
 router.post(
-  "/createUser",
+  "/api/auth/createUser",
   [
     body("name", "Enter a valid name").isLength({ min: 3 }),
     body("email", "Enter a valid email").isEmail(),
