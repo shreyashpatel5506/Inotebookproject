@@ -19,5 +19,5 @@ app.get('/storedata',(req,res)=>{
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port http://localhost:${port}`)//demosite
+  console.log(`Example app listening on port https://inotebookproject.vercel.app/:${port}`)//demosite
 })
