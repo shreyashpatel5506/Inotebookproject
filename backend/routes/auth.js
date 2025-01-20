@@ -10,7 +10,7 @@ const JWT_SECRET = process.env.JWT_SECRET || "helloitisbackend";
 
 // Route 1: Create a User (POST: /api/auth/createUser)
 router.post(
-  "https://inotebookproject.vercel.app/api/auth/createUser",
+  "/createUser",
   [
     body("name", "Enter a valid name").isLength({ min: 3 }),
     body("email", "Enter a valid email").isEmail(),
@@ -56,7 +56,7 @@ router.post(
 
 // Route 2: Authenticate a User (POST: /api/auth/loginUser)
 router.post(
-  'https://inotebookproject.vercel.app/api/auth/loginUser',
+  '/loginUser',
   [
     body('email', 'Enter a valid email').isEmail(),
     body('password', 'Password cannot be blank').exists(),
@@ -91,7 +91,7 @@ router.post(
 );
 
 // Route 3: Get Logged-in User Details (POST: /api/auth/getUser)
-router.post('https://inotebookproject.vercel.app/api/auth/getUser', fetchuser, async (req, res) => {
+router.post('/getUser', fetchuser, async (req, res) => {
   try {
     const userId = req.user.id;
     const user = await User.findById(userId).select('-password');
