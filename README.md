@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-this is demo vedio please show and comment about my project in linkdin post 
+this is demo vedio please show and comment about my project in linkdin post show that
 https://www.linkedin.com/feed/update/urn:li:activity:7278691497514782720/
 
 https://www.loom.com/share/20263aa19e984dae88f7f3758a57977c?sid=ef96eda1-1a32-4f08-b285-30e31587a7a2
