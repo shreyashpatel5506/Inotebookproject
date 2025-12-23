@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // MongoDB URI (include the database name at the end)
-const mongoURI = "mongodb+srv://shreyash:Shreyash%40123@cluster0.xzlmk.mongodb.net/inotebook?retryWrites=true&w=majority";
+const mongoURI =process.env.DB_LINK;
 
 // Function to connect to MongoDB
 const connectToMongo = async () => {  
