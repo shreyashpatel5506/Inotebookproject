@@ -26,7 +26,7 @@ const Signup = (props) => {
     }
 
     try {
-      const response = await fetch("https://inoteproject.onrender.com/createUser", {
+      const response = await fetch("https://inoteproject.onrender.com/api/auth/createUser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
