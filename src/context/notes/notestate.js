@@ -26,7 +26,7 @@ const NoteState = (props) => {
   // Fetch all notes
   const getnote = async () => {
     try {
-      const response = await fetch(`${host}/api/note/fetchallnotes`, {
+      const response = await fetch('https://inoteproject.onrender.com/api/note/fetchallnotes', {
         method: "GET",
         headers: {
           jwtdata: jwtToken,
@@ -48,7 +48,7 @@ const NoteState = (props) => {
   // Add a note
   const addNote = async (title, description, tag) => {
     try {
-      const response = await fetch(`${host}/api/note/addnotes`, {
+      const response = await fetch('https://inoteproject.onrender.com/api/note/addnotes', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const DeleteNote = async (id) => {
     setNotes(newNotes); // Update state immediately
 
     // Make the API call to delete the note
-    const response = await fetch(`${host}/api/note/deletenotes/${id}`, {
+    const response = await fetch(`https://inoteproject.onrender.com/api/note/deletenotes/${id}`, {
       method: "DELETE",
       headers: {
         jwtdata: jwtToken,
@@ -115,7 +115,7 @@ const DeleteNote = async (id) => {
   // Edit a note
   const editNote = async (id, title, description, tag) => {
     try {
-      const response = await fetch(`${host}/api/note/updatenotes/${id}`, {
+      const response = await fetch(`https://inoteproject.onrender.com/api/note/updatenotes/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
