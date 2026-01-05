@@ -2,7 +2,7 @@ import React, { useState,  useEffect } from "react";
 import NoteContext from "./NoteContext";
 
 const NoteState = (props) => {
-  const host = process.env.url;
+  const host = "https://inoteproject.onrender.com";
   const jwtToken =localStorage.getItem('token');
   const [user, setUser] = useState({
     username: localStorage.getItem("username"),
