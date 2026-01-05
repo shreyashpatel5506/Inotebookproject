@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+dotenv.config()
 
 // MongoDB URI (include the database name at the end)
 const mongoURI =process.env.DB_LINK;

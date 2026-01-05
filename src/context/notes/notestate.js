@@ -1,7 +1,6 @@
 import React, { useState,  useEffect } from "react";
 import NoteContext from "./NoteContext";
-import dotenv from "dotenv";
-dotenv.config();
+
 const NoteState = (props) => {
   const host = process.env.url;
   const jwtToken =localStorage.getItem('token');

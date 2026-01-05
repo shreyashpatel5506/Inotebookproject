@@ -6,6 +6,7 @@
     "@react-oauth/google": "^0.12.1",
     "concurrently": "^9.1.0",
     "cra-template": "1.2.0",
+    "dotenv": "^17.2.3",
     "google-auth-library": "^9.15.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
