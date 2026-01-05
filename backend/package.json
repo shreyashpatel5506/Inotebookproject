@@ -2,10 +2,12 @@
   "name": "inotebook",
   "version": "1.0.0",
   "main": "index.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run start",
-    "build":"npm run build"
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "node index.js",
+  "build": "npm install"
+
   },
   "author": "",
   "license": "ISC",
