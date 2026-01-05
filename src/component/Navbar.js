@@ -12,7 +12,7 @@ const Navbar = ({ showAlert }) => {
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/auth/getUser", {
+                const response = await fetch("https://inoteproject.onrender.com/api/auth/getUser", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
