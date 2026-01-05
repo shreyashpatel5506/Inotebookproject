@@ -11,7 +11,7 @@ const port = 5000//localhost ka port
 app.use(express.json())
 
 app.use(cors({
-  origin: 'https://inotebookproject-seven.vercel.app/', // Change this to your frontend URL
+  origin: 'https://inotebookproject-seven.vercel.app', // Change this to your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 
