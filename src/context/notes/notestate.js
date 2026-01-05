@@ -1,8 +1,9 @@
 import React, { useState,  useEffect } from "react";
 import NoteContext from "./NoteContext";
-
+import dotenv from "dotenv";
+dotenv.config();
 const NoteState = (props) => {
-  const host = "http://localhost:5000";
+  const host = process.env.url;
   const jwtToken =localStorage.getItem('token');
   const [user, setUser] = useState({
     username: localStorage.getItem("username"),
