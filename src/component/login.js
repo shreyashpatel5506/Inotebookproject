@@ -9,7 +9,7 @@ const Login = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https://inoteproject.onrender.com/api/auth/loginUser", {
+            const response = await fetch("https://inoteproject.onrender.com/loginUser", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
