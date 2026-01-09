@@ -9,7 +9,7 @@
     "dotenv": "^17.2.3",
     "google-auth-library": "^9.15.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.2.3",
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
     "three": "^0.124.0",
